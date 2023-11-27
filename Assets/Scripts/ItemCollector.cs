@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ItemCollector : MonoBehaviour
 {
-    private int pineapples = 0;
+    public static int pineapples = 0;
 
     [SerializeField] private Text pineapplesText;
 
