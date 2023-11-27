@@ -21,7 +21,7 @@ public class Database : MonoBehaviour
     {
         user.Username = username.text;
         user.Score = ItemCollector.pineapples;
-        RestClient.Put(database_url + "/" + username.text + ".json", user);
+        RestClient.Put(database_url + "/object/" + username.text + ".json", user);
     }
 
     public void readData()
