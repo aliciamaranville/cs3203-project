@@ -15,7 +15,7 @@ public class ItemCollector : MonoBehaviour
         {
             Destroy(collision.gameObject);
             pineapples++;
-            pineapplesText.text = "Pineapples: " + pineapples;
+            pineapplesText.text = "Score: " + pineapples;
         }
     }
 }
