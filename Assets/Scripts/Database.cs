@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Database : MonoBehaviour
 {
     public string database_url = "";
+    public Text score;
     [SerializeField] InputField username;
     [SerializeField] InputField nametoread;
     User user = new User();
@@ -26,10 +27,10 @@ public class Database : MonoBehaviour
 
     public void readData()
     {
-        RestClient.Get<User>(database_url + "/" + nametoread.text + ".json").Then(response =>
+        RestClient.Get<User>(database_url + "/object/" + nametoread.text + ".json").Then(response =>
         {
             user = response;
-            Debug.Log(user.Username);
+            score.text = "Score: " + user.Score;
         });
     }
     // Update is called once per frame
