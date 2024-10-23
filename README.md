@@ -1,9 +1,9 @@
 # Pineapple Platform Game
 
 ### Game Description
-For our final software engineering project, we decided to develop a multilevel 2D platform game on Unity with an online leaderboard displaying user scores. The game allows users to maneuver a character through a 2D terrain. The terrain contains a series of razor like obstacles, requiring characters to utilize platforms to avoid them. Additionally, users are offered the challenge of collecting pineapple tokens to increase their score.
+For our final software engineering project, we decided to develop a **multilevel 2D platform game application on Unity** with an online leaderboard displaying user scores. The game allows users to maneuver a character through a 2D terrain. The terrain contains a series of razor like obstacles, requiring characters to utilize platforms to avoid them. Additionally, users are offered the challenge of collecting pineapple tokens to increase their score.
 
-The user's names and final scores are saved on a database and displayed on a leaderboard on a locally hosted website. Lastly, returning players can check their most recent score by entering their name at the start screen.
+The user's names and final scores are saved on a database and **displayed on a leaderboard** on a locally hosted website. Lastly, returning players can **check their most recent score** by entering their name at the start screen.
 
 ### Storing and Displaying Information
 We used a Model View Controller (MVC) architecture to store user information. Using C# and Razor code, we developed a Model to create the data sets, a View to send data to Controller to process, and a Control to manipulate data and update the model.
